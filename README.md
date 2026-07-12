@@ -1,5 +1,3 @@
-Đây là một README mình nghĩ rất phù hợp cho CoreBank. Nó ngắn gọn, chuyên nghiệp và thể hiện đúng mục tiêu của project.
-
 🏦 CoreBank
 
 A modern banking analytics application built with Snowflake, Snowpark, and Streamlit.
