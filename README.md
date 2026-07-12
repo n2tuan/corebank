@@ -29,10 +29,10 @@ Technology Stack
 
 ⸻
 
-Project Structure
+## Project Structure
 
+```text
 corebank/
-│
 ├── app.py
 ├── pages/
 ├── sql/
@@ -45,37 +45,41 @@ corebank/
 ├── images/
 ├── requirements.txt
 └── README.md
+```
 
-⸻
+---
 
-Database Architecture
+## Database Architecture
 
+```text
 COREBANK
-│
 ├── RAW
 │   ├── BRANCH
 │   ├── CUST
 │   ├── CUST_CONTACT
 │   ├── ACCT
 │   └── TXN
-│
 ├── STAGING
-│
 ├── MART
-│
 └── ANALYTICS
+```
 
 ⸻
 
-Data Model
+## Data Model
 
-CUST - - CUST_CONTACT
-│
-│
-ACCT - - BRANCH
-|
-|
-TXN      
+```text
+             CUST
+               |
+        +------+------+
+        |             |
+        |             |
+ CUST_CONTACT       ACCT
+                       |
+                 +-----+-----+
+                 |           |
+              BRANCH       TXN
+```   
 
 ⸻
 
