@@ -8,3 +8,15 @@ create or replace table COREBANK.RAW.CUST(
     DOB DATE,
     CREATED_AT TIMESTAMP
 );
+
+create or replace table COREBANK.RAW.ACCT(
+    acct_number VARCHAR,
+    cust_id VARCHAR,
+    branch_id VARCHAR,
+    acct_type VARCHAR,
+    currency VARCHAR,
+    acct_status VARCHAR,
+    opened_at TIMESTAMP,
+    closed_at TIMESTAMP
+)
+;
